@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -21,6 +22,9 @@
 .text-light-gray{
   color: #727272;
 }
+.text-paymari{
+  color: #FF900E;
+}
 .bg-light{
   background-color: rgba(255, 144, 14, 0.1);
 }
@@ -33,6 +37,19 @@
   border-radius: 8px;
   border: none;
 }
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+main>section{
+  margin-top: 130px ;
+}
+.section-title{
+  font-size:2.8rem ;
+  font-weight: 700;
+  
+ }
 
 /* header style */
 
@@ -79,8 +96,34 @@
   width: 100%;
   
  }
+ .banner-image{
+ width: 100%;
+
+ }
+ .team-img-contayner{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+ }
+ .our-features{
+   margin-left:  73px;
+   max-width: 530px;
+   margin-top: 232px;
+
+ }
+ 
+
+ 
  @media screen and (max-width:768px) {
- .navber, .nav-link{
+ .navber, .nav-link ,.team {
   flex-direction: column;
  }  
+ .team-img-contayner{
+  grid-template-columns: repeat(1,1fr);
+  margin: 0 auto;
+
+ }
+ .our-features{
+margin-left: 120px;
+ }
  }
